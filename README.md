@@ -29,9 +29,9 @@ DevTools listening on ws://127.0.0.1:9222/devtools/browser/f1544ace-94e6-43e2-9a
 [294766:294766:0524/163411.776112:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
 ```
 
-This includes the hash (i.e. `f1544ace-94e6-43e2-9a9e-f0aa1dbad498`) we need to connect via remote debugging.
+This includes the remote DevTools identifier (i.e. `f1544ace-94e6-43e2-9a9e-f0aa1dbad498`) we need to connect via remote debugging. The Puppeteer script will automatically parse this output and get the remote DevTools identifier.
 
-2. Run puppeteer script:
+2. Run Puppeteer script:
 
 ```bash
 node puppeteer.js
